@@ -24,4 +24,10 @@ fun main () {
     val user3 = User("Mbappe", 23)
     println(user1.equals(user2))
     println(user1.equals(user3))
+
+    println()
+
+    // copy data class
+    val dataUser4 = dataUser3.copy(age = 18)
+    println(dataUser4)
 }
