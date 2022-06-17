@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.14175724637681159" />
         <entry key="app/src/main/res/layout/activity_move.xml" value="0.14175724637681159" />
+        <entry key="app/src/main/res/layout/activity_move_for_result.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_move_with_data.xml" value="0.20104166666666667" />
         <entry key="app/src/main/res/layout/activity_move_with_object.xml" value="0.14175724637681159" />
       </map>
