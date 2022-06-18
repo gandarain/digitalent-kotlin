@@ -30,9 +30,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View?) {
         if (v?.id == R.id.btn_set_value) {
             Log.d("MainActivity", names.toString())
+            Log.d("Names Size", names.size.toString())
             val name = StringBuilder()
 
-            for (i in 0..3) {
+            for (i in 0 until names.size) {
                 name.append(names[i]).append("\n")
             }
 
