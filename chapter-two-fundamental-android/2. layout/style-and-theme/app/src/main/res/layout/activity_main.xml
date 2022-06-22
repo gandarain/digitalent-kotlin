@@ -4,110 +4,120 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     tools:context=".MainActivity">
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:id="@+id/image_phone"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:scaleType="fitXY"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/pixel_google" />
-
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/pixel_google"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/item_image" />
+            <TextView
+                style="@style/TextContent.Small.White"
+                android:padding="8dp"
+                android:text="@string/dummy_photos"
+                android:gravity="center_vertical"
+                android:drawablePadding="4dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:background="#4D000000"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="bottom"
+                app:drawableStartCompat="@drawable/ic_collections_white_18dp" />
+        </FrameLayout>
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:background="#4D000000"
-            android:drawableStart="@drawable/ic_collections_white_18dp"
-            android:drawableLeft="@drawable/ic_collections_white_18dp"
-            android:drawablePadding="4dp"
-            android:elevation="2dp"
-            android:padding="8dp"
-            android:text="@string/dummy_photos"
-            android:textAppearance="@style/TextAppearance.AppCompat.Small"
-            android:textColor="@android:color/white"
-            app:layout_constraintBottom_toBottomOf="@+id/image_phone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1" />
-
-        <TextView
-            android:id="@+id/text_price"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/dummy_value"
-            android:textColor="@android:color/black"
+            style="@style/TextContent"
             android:textSize="32sp"
-            app:layout_constraintStart_toStartOf="@+id/text_stock"
-            app:layout_constraintTop_toBottomOf="@+id/image_phone" />
-
+            android:text="@string/dummy_value"
+            android:layout_marginTop="16dp"/>
         <TextView
-            android:id="@+id/text_stock"
-            android:layout_width="match_parent"
-            android:layout_height="21dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
+            style="@style/TextContent.Subtitle"
             android:text="@string/stock"
-            android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/text_description"
-            app:layout_constraintTop_toBottomOf="@+id/text_price" />
-
+            android:layout_marginBottom="16dp"/>
         <TextView
-            android:id="@+id/text_description"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
+            style="@style/TextContent"
+            android:layout_marginBottom="16dp"
             android:lineSpacingMultiplier="1"
             android:text="@string/content_text"
-            android:textColor="@android:color/black"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_stock" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline"
-            android:layout_width="wrap_content"
+            android:textColor="@android:color/black" />
+        <TextView
+            style="@style/TextContent.Subtitle"
+            android:text="@string/specification"
+            android:layout_marginBottom="8dp"/>
+        <TableLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_begin="460dp" />
-
-        <include
-            android:id="@+id/include_specifications"
-            layout="@layout/layout_specification"
-            android:layout_width="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:text="@string/display" />
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:text="@string/content_specs_display" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:text="@string/size" />
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:text="@string/content_specs_size" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:text="@string/battery" />
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:text="@string/content_specs_battery" />
+            </TableRow>
+        </TableLayout>
+        <TextView
+            style="@style/TextContent.Subtitle"
+            android:text="@string/seller"
+            android:layout_marginBottom="8dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/guideline" />
-
-        <include
-            android:id="@+id/include_seller"
-            layout="@layout/layout_seller"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/include_specifications" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/photo_2"
+                android:layout_centerVertical="true"
+                android:id="@+id/profile_image"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="@string/sellerimage" />
+            <TextView
+                style="@style/TextContent"
+                android:layout_toEndOf="@id/profile_image"
+                android:text="@string/my_name"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <Button
+            style="@style/ButtonGeneral"
+            android:text="@string/buy" />
+    </LinearLayout>
 </ScrollView>
