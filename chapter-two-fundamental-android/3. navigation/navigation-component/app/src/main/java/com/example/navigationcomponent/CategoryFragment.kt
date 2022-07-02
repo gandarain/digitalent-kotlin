@@ -12,10 +12,11 @@ class CategoryFragment : Fragment() {
     private var _binding: FragmentCategoryBinding? = null
     private val binding get() = _binding!!
 
-    companion object {
-        const val EXTRA_NAME = "extra_name"
-        const val EXTRA_STOCK = "extra_stock"
-    }
+    // TODO: Using bundle
+    // companion object {
+        // const val EXTRA_NAME = "extra_name"
+        // const val EXTRA_STOCK = "extra_stock"
+    // }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -28,11 +29,20 @@ class CategoryFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        // TODO: Using bundle
+        // binding.btnCategoryLifestyle.setOnClickListener {
+            // val mBundle = Bundle()
+            // mBundle.putString(EXTRA_NAME, "Lifestyle")
+            // mBundle.putLong(EXTRA_STOCK, 7)
+            // view.findNavController().navigate(R.id.action_categoryFragment_to_detailCategoryFragment, mBundle)
+        // }
+
+        // TODO: Using Safe Args
         binding.btnCategoryLifestyle.setOnClickListener {
-            val mBundle = Bundle()
-            mBundle.putString(EXTRA_NAME, "Lifestyle")
-            mBundle.putLong(EXTRA_STOCK, 7)
-            view.findNavController().navigate(R.id.action_categoryFragment_to_detailCategoryFragment, mBundle)
+            val toDetailCategoryFragment = CategoryFragmentDirections.actionCategoryFragmentToDetailCategoryFragment()
+            toDetailCategoryFragment.name = "Lifestyle"
+            toDetailCategoryFragment.stock = 7
+            view.findNavController().navigate(toDetailCategoryFragment)
         }
     }
 

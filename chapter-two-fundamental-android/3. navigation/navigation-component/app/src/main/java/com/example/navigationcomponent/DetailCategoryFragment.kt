@@ -5,18 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.findNavController
-import com.example.navigationcomponent.databinding.FragmentCategoryBinding
 import com.example.navigationcomponent.databinding.FragmentDetailCategoryBinding
 
 class DetailCategoryFragment : Fragment() {
     private var _binding: FragmentDetailCategoryBinding? = null
     private val binding get() = _binding!!
-
-    companion object {
-        val EXTRA_NAME = "extra_name"
-        val EXTRA_STOCK = "extra_stock"
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -29,8 +22,13 @@ class DetailCategoryFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val name = arguments?.getString(CategoryFragment.EXTRA_NAME)
-        val description = arguments?.getLong(CategoryFragment.EXTRA_STOCK)
+        // TODO: Using Bundle
+        // val name = arguments?.getString(CategoryFragment.EXTRA_NAME)
+        // val description = arguments?.getLong(CategoryFragment.EXTRA_STOCK)
+
+        // TODO: Using Safe Args
+        val name = DetailCategoryFragmentArgs.fromBundle(arguments as Bundle).name
+        val description = DetailCategoryFragmentArgs.fromBundle(arguments as Bundle).stock
 
         binding.tvCategoryName.text = name
         binding.tvCategoryDescription.text = "Stock : $description"
