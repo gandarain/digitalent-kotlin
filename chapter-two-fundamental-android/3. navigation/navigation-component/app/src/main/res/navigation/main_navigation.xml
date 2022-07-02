@@ -15,7 +15,9 @@
             app:destination="@id/categoryFragment" />
         <action
             android:id="@+id/action_homeFragment_to_profileActivity"
-            app:destination="@id/profileActivity" />
+            app:destination="@id/profileActivity"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
     </fragment>
     <fragment
         android:id="@+id/categoryFragment"
@@ -30,19 +32,31 @@
         android:id="@+id/profileActivity"
         android:name="com.example.navigationcomponent.ProfileActivity"
         android:label="activity_profile"
-        tools:layout="@layout/activity_profile" />
+        tools:layout="@layout/activity_profile">
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="https://www.dicoding.com/profile" />
+    </activity>
     <fragment
         android:id="@+id/detailCategoryFragment"
         android:name="com.example.navigationcomponent.DetailCategoryFragment"
         android:label="fragment_detail_category"
-        tools:layout="@layout/fragment_detail_category" >
+        tools:layout="@layout/fragment_detail_category">
         <argument
             android:name="name"
-            app:argType="string"
-            android:defaultValue="default name" />
+            android:defaultValue="default name"
+            app:argType="string" />
         <argument
             android:name="stock"
-            app:argType="long"
-            android:defaultValue="0L" />
+            android:defaultValue="0L"
+            app:argType="long" />
+        <deepLink
+            android:id="@+id/deepLink2"
+            app:uri="https://www.dicoding.com/detail/{name}" />
+        <action
+            android:id="@+id/action_detailCategoryFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>
