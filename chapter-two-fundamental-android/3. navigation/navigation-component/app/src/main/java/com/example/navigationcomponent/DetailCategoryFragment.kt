@@ -7,33 +7,33 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import com.example.navigationcomponent.databinding.FragmentCategoryBinding
+import com.example.navigationcomponent.databinding.FragmentDetailCategoryBinding
 
-class CategoryFragment : Fragment() {
-    private var _binding: FragmentCategoryBinding? = null
+class DetailCategoryFragment : Fragment() {
+    private var _binding: FragmentDetailCategoryBinding? = null
     private val binding get() = _binding!!
 
     companion object {
-        const val EXTRA_NAME = "extra_name"
-        const val EXTRA_STOCK = "extra_stock"
+        val EXTRA_NAME = "extra_name"
+        val EXTRA_STOCK = "extra_stock"
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentCategoryBinding.inflate(inflater, container, false)
+        _binding = FragmentDetailCategoryBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnCategoryLifestyle.setOnClickListener {
-            val mBundle = Bundle()
-            mBundle.putString(EXTRA_NAME, "Lifestyle")
-            mBundle.putLong(EXTRA_STOCK, 7)
-            view.findNavController().navigate(R.id.action_categoryFragment_to_detailCategoryFragment, mBundle)
-        }
+        val name = arguments?.getString(CategoryFragment.EXTRA_NAME)
+        val description = arguments?.getLong(CategoryFragment.EXTRA_STOCK)
+
+        binding.tvCategoryName.text = name
+        binding.tvCategoryDescription.text = "Stock : $description"
     }
 
     override fun onDestroy() {
