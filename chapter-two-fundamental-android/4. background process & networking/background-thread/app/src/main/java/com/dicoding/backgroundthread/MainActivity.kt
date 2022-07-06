@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
             try {
                 // simulate process compressing
                 for (i in 0..10) {
-                    Thread.sleep(500)
+                    Thread.sleep(APP_FORCE_CLOSE)
                     val percentage = i * 10
                     if (percentage == 100) {
                         tvStatus.setText(R.string.task_completed)
@@ -29,5 +29,10 @@ class MainActivity : AppCompatActivity() {
                 e.printStackTrace()
             }
         }
+    }
+
+    companion object {
+        const val APP_FREEZE = 500L
+        const val APP_FORCE_CLOSE = 50000L
     }
 }
