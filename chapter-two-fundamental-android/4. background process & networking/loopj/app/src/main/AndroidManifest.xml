@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Loopj">
         <activity
+            android:name=".ListQuotesActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
