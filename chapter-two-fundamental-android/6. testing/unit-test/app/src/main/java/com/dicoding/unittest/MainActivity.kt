@@ -68,13 +68,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         activityMainBinding.btnCalculateVolume.visibility = View.VISIBLE
         activityMainBinding.btnCalculateCircumference.visibility = View.VISIBLE
         activityMainBinding.btnCalculateSurfaceArea.visibility = View.VISIBLE
-        activityMainBinding.btnSave.visibility = View.VISIBLE
+        activityMainBinding.btnSave.visibility = View.GONE
     }
 
     private fun gone() {
         activityMainBinding.btnCalculateVolume.visibility = View.GONE
         activityMainBinding.btnCalculateCircumference.visibility = View.GONE
         activityMainBinding.btnCalculateSurfaceArea.visibility = View.GONE
-        activityMainBinding.btnSave.visibility = View.GONE
+        activityMainBinding.btnSave.visibility = View.VISIBLE
     }
 }
