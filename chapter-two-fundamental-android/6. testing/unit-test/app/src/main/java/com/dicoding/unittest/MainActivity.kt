@@ -6,7 +6,7 @@ import android.text.TextUtils
 import android.view.View
 import com.dicoding.unittest.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var activityMainBinding: ActivityMainBinding
     private lateinit var mainViewModel: MainViewModel
 
@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
                     R.id.btn_calculate_surface_area -> {
                         activityMainBinding.tvResult.text = mainViewModel.getSurfaceArea().toString()
                     }
-                    R.id.btn_calculate_volume => {
+                    R.id.btn_calculate_volume -> {
                         activityMainBinding.tvResult.text = mainViewModel.getVolume().toString()
                     }
                 }
