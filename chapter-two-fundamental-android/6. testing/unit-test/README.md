@@ -1,3 +1,3 @@
-## UI Test using Espresso
+## Unit Test using JUnit and Mockito
 
-![ui-test](https://user-images.githubusercontent.com/27923352/181019359-228c86ce-42ad-44f6-a729-0aa47c04fe79.gif)
+![unit-test](https://user-images.githubusercontent.com/27923352/181019872-d24ec17f-0b03-4d0b-99d8-b0c3ec4a3de3.gif)
