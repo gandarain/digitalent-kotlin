@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val length = activityMainBinding.edtLength.text.toString().trim()
         val width = activityMainBinding.edtWidth.text.toString().trim()
         val height = activityMainBinding.edtHeight.text.toString().trim()
-
         when {
             TextUtils.isEmpty(length) -> {
                 activityMainBinding.edtLength.error = "Field ini tidak boleh kosong"
@@ -41,10 +40,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             else -> {
                 val valueLength = length.toDouble()
-                val valueWidth = length.toDouble()
+                val valueWidth = width.toDouble()
                 val valueHeight = height.toDouble()
-
-                when(v.id) {
+                when (v.id) {
                     R.id.btn_save -> {
                         mainViewModel.save(valueLength, valueWidth, valueHeight)
                         visible()
@@ -55,9 +53,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     }
                     R.id.btn_calculate_surface_area -> {
                         activityMainBinding.tvResult.text = mainViewModel.getSurfaceArea().toString()
+                        gone()
                     }
                     R.id.btn_calculate_volume -> {
                         activityMainBinding.tvResult.text = mainViewModel.getVolume().toString()
+                        gone()
                     }
                 }
             }
@@ -70,7 +70,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         activityMainBinding.btnCalculateSurfaceArea.visibility = View.VISIBLE
         activityMainBinding.btnSave.visibility = View.GONE
     }
-
     private fun gone() {
         activityMainBinding.btnCalculateVolume.visibility = View.GONE
         activityMainBinding.btnCalculateCircumference.visibility = View.GONE
