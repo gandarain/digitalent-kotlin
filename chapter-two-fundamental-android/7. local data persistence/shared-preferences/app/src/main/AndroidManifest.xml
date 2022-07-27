@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SharedPreferences">
         <activity
+            android:name=".FormUserPreferenceActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
