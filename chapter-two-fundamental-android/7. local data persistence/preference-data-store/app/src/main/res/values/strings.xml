@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Preference Data Store</string>
+    <string name="dark_mode">Dark Mode</string>
 </resources>
