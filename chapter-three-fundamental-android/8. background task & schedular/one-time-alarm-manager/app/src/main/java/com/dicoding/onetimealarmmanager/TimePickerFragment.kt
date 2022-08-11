@@ -33,7 +33,7 @@ class TimePickerFragment : DialogFragment(), TimePickerDialog.OnTimeSetListener 
         return TimePickerDialog(activity, this, hour, minute, formatHour24)
     }
 
-    override fun onTimeSet(p0: TimePicker?, hourOfDay: Int, minute: Int) {
+    override fun onTimeSet(view: TimePicker, hourOfDay: Int, minute: Int) {
         mListener?.onDialogTimeSet(tag, hourOfDay, minute)
     }
 

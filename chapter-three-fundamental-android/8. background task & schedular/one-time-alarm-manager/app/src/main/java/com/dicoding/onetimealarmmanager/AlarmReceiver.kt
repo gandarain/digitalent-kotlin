@@ -28,12 +28,10 @@ class AlarmReceiver : BroadcastReceiver() {
         if (message != null) {
             showAlarmNotification(context, title, message, notifId)
         }
-
-        Log.e("onReceive", "onReceive")
     }
 
     private fun showToast(context: Context, title: String, message: String?) {
-        Toast.makeText(context, "$title: $message", Toast.LENGTH_SHORT).show()
+        Toast.makeText(context, "$title : $message", Toast.LENGTH_LONG).show()
     }
 
     fun setOneTimeAlarm(context: Context, type: String, date: String, time: String, message: String) {
@@ -58,7 +56,19 @@ class AlarmReceiver : BroadcastReceiver() {
 
         val pendingIntent = PendingIntent.getBroadcast(context, ID_ONETIME, intent, PendingIntent.FLAG_IMMUTABLE)
         alarmManager.set(AlarmManager.RTC_WAKEUP, calendar.timeInMillis, pendingIntent)
+
         Toast.makeText(context, "One time alarm set up", Toast.LENGTH_SHORT).show()
+    }
+
+    private fun isDateInvalid(date: String, format: String): Boolean {
+        return try {
+            val df = SimpleDateFormat(format, Locale.getDefault())
+            df.isLenient = false
+            df.parse(date)
+            false
+        } catch (e: ParseException) {
+            true
+        }
     }
 
     private fun showAlarmNotification(context: Context, title: String, message: String, notifId: Int) {
@@ -82,25 +92,15 @@ class AlarmReceiver : BroadcastReceiver() {
 
             channel.enableVibration(true)
             channel.vibrationPattern = longArrayOf(1000, 1000, 1000, 1000, 1000)
-            
+
             builder.setChannelId(channelId)
+
             notificationManagerCompat.createNotificationChannel(channel)
         }
 
         val notification = builder.build()
 
         notificationManagerCompat.notify(notifId, notification)
-    }
-
-    private fun isDateInvalid(date: String, format: String): Boolean {
-        return try {
-            val df = SimpleDateFormat(format, Locale.getDefault())
-            df.isLenient = false
-            df.parse(date)
-            false
-        } catch (e: ParseException) {
-            true
-        }
     }
 
     companion object {
