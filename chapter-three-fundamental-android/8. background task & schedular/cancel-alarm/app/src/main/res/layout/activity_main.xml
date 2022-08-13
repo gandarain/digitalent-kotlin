@@ -102,5 +102,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:text="@string/set_repeating_alarm" />
+        <Button
+            android:id="@+id/btn_cancel_repeating_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/cancel_alarm" />
     </LinearLayout>
 </LinearLayout>
