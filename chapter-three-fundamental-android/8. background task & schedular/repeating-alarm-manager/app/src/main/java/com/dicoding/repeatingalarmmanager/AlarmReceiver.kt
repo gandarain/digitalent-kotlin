@@ -23,6 +23,7 @@ class AlarmReceiver : BroadcastReceiver() {
         val title = if (type.equals(TYPE_ONE_TIME, ignoreCase = true)) TYPE_ONE_TIME else TYPE_REPEATING
         val notifId = if (type.equals(TYPE_ONE_TIME, ignoreCase = true)) ID_ONETIME else ID_REPEATING
 
+        //Jika Anda ingin menampilkan dengan toast anda bisa menghilangkan komentar pada baris dibawah ini.
         showToast(context, title, message)
 
         if (message != null) {
@@ -30,11 +31,58 @@ class AlarmReceiver : BroadcastReceiver() {
         }
     }
 
+    // Gunakan metode ini untuk menampilkan toast
+
     private fun showToast(context: Context, title: String, message: String?) {
         Toast.makeText(context, "$title : $message", Toast.LENGTH_LONG).show()
     }
 
+    // Gunakan metode ini untuk menampilkan notifikasi
+    private fun showAlarmNotification(context: Context, title: String, message: String, notifId: Int) {
+
+        val CHANNEL_ID = "Channel_1"
+        val CHANNEL_NAME = "AlarmManager channel"
+
+        val notificationManagerCompat = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+        val alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
+        val builder = NotificationCompat.Builder(context, CHANNEL_ID)
+            .setSmallIcon(R.drawable.ic_access_time_black)
+            .setContentTitle(title)
+            .setContentText(message)
+            .setColor(ContextCompat.getColor(context, android.R.color.transparent))
+            .setVibrate(longArrayOf(1000, 1000, 1000, 1000, 1000))
+            .setSound(alarmSound)
+
+        /*
+        Untuk android Oreo ke atas perlu menambahkan notification channel
+        Materi ini akan dibahas lebih lanjut di modul extended
+         */
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+
+            /* Create or update. */
+            val channel = NotificationChannel(CHANNEL_ID,
+                CHANNEL_NAME,
+                NotificationManager.IMPORTANCE_DEFAULT)
+
+            channel.enableVibration(true)
+            channel.vibrationPattern = longArrayOf(1000, 1000, 1000, 1000, 1000)
+
+            builder.setChannelId(CHANNEL_ID)
+
+            notificationManagerCompat.createNotificationChannel(channel)
+        }
+
+        val notification = builder.build()
+
+        notificationManagerCompat.notify(notifId, notification)
+
+    }
+
+    // Metode ini digunakan untuk menjalankan alarm one time
+
     fun setOneTimeAlarm(context: Context, type: String, date: String, time: String, message: String) {
+
+        // Validasi inputan date dan time terlebih dahulu
         if (isDateInvalid(date, DATE_FORMAT) || isDateInvalid(time, TIME_FORMAT)) return
 
         val alarmManager = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
@@ -60,7 +108,10 @@ class AlarmReceiver : BroadcastReceiver() {
         Toast.makeText(context, "One time alarm set up", Toast.LENGTH_SHORT).show()
     }
 
+    // Metode ini digunakan untuk menjalankan alarm repeating
     fun setRepeatingAlarm(context: Context, type: String, time: String, message: String) {
+
+        // Validasi inputan waktu terlebih dahulu
         if (isDateInvalid(time, TIME_FORMAT)) return
 
         val alarmManager = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
@@ -81,6 +132,7 @@ class AlarmReceiver : BroadcastReceiver() {
         Toast.makeText(context, "Repeating alarm set up", Toast.LENGTH_SHORT).show()
     }
 
+    // Metode ini digunakan untuk validasi date dan time
     private fun isDateInvalid(date: String, format: String): Boolean {
         return try {
             val df = SimpleDateFormat(format, Locale.getDefault())
@@ -92,47 +144,18 @@ class AlarmReceiver : BroadcastReceiver() {
         }
     }
 
-    private fun showAlarmNotification(context: Context, title: String, message: String, notifId: Int) {
-        val channelId = "Channel_1"
-        val channelName = "AlarmManager channel"
-
-        val notificationManagerCompat = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-        val alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
-        val builder = NotificationCompat.Builder(context, channelId)
-            .setSmallIcon(R.drawable.ic_access_time_black)
-            .setContentTitle(title)
-            .setContentText(message)
-            .setColor(ContextCompat.getColor(context, android.R.color.transparent))
-            .setVibrate(longArrayOf(1000, 1000, 1000, 1000, 1000))
-            .setSound(alarmSound)
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val channel = NotificationChannel(channelId,
-                channelName,
-                NotificationManager.IMPORTANCE_DEFAULT)
-
-            channel.enableVibration(true)
-            channel.vibrationPattern = longArrayOf(1000, 1000, 1000, 1000, 1000)
-
-            builder.setChannelId(channelId)
-
-            notificationManagerCompat.createNotificationChannel(channel)
-        }
-
-        val notification = builder.build()
-
-        notificationManagerCompat.notify(notifId, notification)
-    }
-
     companion object {
         const val TYPE_ONE_TIME = "OneTimeAlarm"
         const val TYPE_REPEATING = "RepeatingAlarm"
         const val EXTRA_MESSAGE = "message"
         const val EXTRA_TYPE = "type"
 
+        // Siapkan 2 id untuk 2 macam alarm, onetime dan repeating
         private const val ID_ONETIME = 100
         private const val ID_REPEATING = 101
+
         private const val DATE_FORMAT = "yyyy-MM-dd"
         private const val TIME_FORMAT = "HH:mm"
+
     }
 }
