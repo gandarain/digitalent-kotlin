@@ -29,6 +29,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, DatePickerFragme
         binding?.btnOnceTime?.setOnClickListener(this)
         binding?.btnSetOnceAlarm?.setOnClickListener(this)
 
+        // Listener repeating alarm
+        binding?.btnRepeatingTime?.setOnClickListener(this)
+        binding?.btnSetRepeatingAlarm?.setOnClickListener(this)
+
         alarmReceiver = AlarmReceiver()
     }
 
@@ -52,6 +56,16 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, DatePickerFragme
                     onceTime,
                     onceMessage)
             }
+            R.id.btn_repeating_time -> {
+                val timePickerFragment = TimePickerFragment()
+                timePickerFragment.show(supportFragmentManager, TIME_PICKER_REPEAT_TAG)
+            }
+            R.id.btn_set_repeating_alarm -> {
+                val repeatTime = binding?.tvRepeatingTime?.text.toString()
+                val repeatMessage = binding?.edtRepeatingMessage?.text.toString()
+                alarmReceiver.setRepeatingAlarm(this, AlarmReceiver.TYPE_REPEATING,
+                    repeatTime, repeatMessage)
+            }
         }
     }
 
@@ -64,6 +78,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, DatePickerFragme
 
         // Set text dari textview once
         binding?.tvOnceDate?.text = dateFormat.format(calendar.time)
+
+        when(tag) {
+            TIME_PICKER_ONCE_TAG -> binding?.tvOnceTime?.text = dateFormat.format(calendar.time)
+            TIME_PICKER_REPEAT_TAG -> binding?.tvRepeatingTime?.text = dateFormat.format(calendar.time)
+            else -> {}
+        }
     }
 
     override fun onDialogTimeSet(tag: String?, hourOfDay: Int, minute: Int) {
