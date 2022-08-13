@@ -1,3 +1,3 @@
 ### Repeating Alarm Manager
 
-![repeating-alarm](https://user-images.githubusercontent.com/27923352/184495717-97526177-fadc-4584-a7f0-54d012d25655.gif)
+![cancel alarm](https://user-images.githubusercontent.com/27923352/184500725-cf85267e-5f3b-4b9f-a67e-9122e223aefa.gif)
