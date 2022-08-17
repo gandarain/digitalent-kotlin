@@ -25,6 +25,27 @@
         android:layout_margin="4dp"
         android:text="@string/run_one_time_task" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnPeriodicTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:text="@string/run_periodic_task" />
+        <Button
+            android:id="@+id/btnCancelTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="@string/cancel_periodic_task" />
+    </LinearLayout>
+
     <TextView
         android:id="@+id/textStatus"
         android:layout_width="wrap_content"
