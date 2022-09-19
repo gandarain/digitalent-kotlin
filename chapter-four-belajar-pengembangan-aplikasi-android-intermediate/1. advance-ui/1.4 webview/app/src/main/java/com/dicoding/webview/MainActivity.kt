@@ -3,6 +3,7 @@ package com.dicoding.webview
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Window
+import android.webkit.WebChromeClient
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.Toast
@@ -24,11 +25,14 @@ class MainActivity : AppCompatActivity() {
         webView.settings.javaScriptEnabled = true
 
         webView.webViewClient = object : WebViewClient() {
-            override fun onPageFinished(view: WebView?, url: String?) {
+            override fun onPageFinished(view: WebView, url: String) {
                 super.onPageFinished(view, url)
-                Toast.makeText(this@MainActivity, "Web Dicoding berhasil dimuat", Toast.LENGTH_SHORT).show()
+                view.loadUrl("javascript:alert('Web Dicoding berhasil dimuat')")
             }
         }
+
+        webView.webChromeClient = WebChromeClient()
+
         webView.loadUrl(DICODING_URL)
     }
 }
