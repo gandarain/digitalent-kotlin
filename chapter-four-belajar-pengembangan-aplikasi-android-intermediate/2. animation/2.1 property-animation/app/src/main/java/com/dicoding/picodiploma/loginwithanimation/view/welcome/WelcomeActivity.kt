@@ -31,7 +31,7 @@ class WelcomeActivity : AppCompatActivity() {
             duration = 6000
             repeatCount = ObjectAnimator.INFINITE
             repeatMode = ObjectAnimator.REVERSE
-        }
+        }.start()
 
         val login = ObjectAnimator.ofFloat(binding.loginButton, View.ALPHA, 1F).setDuration(500)
         val signUp = ObjectAnimator.ofFloat(binding.signupButton, View.ALPHA, 1F).setDuration(500)
