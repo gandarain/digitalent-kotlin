@@ -8,6 +8,7 @@
 
     <ImageView
         android:id="@+id/profileImageView"
+        android:transitionName="profile"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_marginTop="32dp"
@@ -18,6 +19,7 @@
 
     <TextView
         android:id="@+id/nameTextView"
+        android:transitionName="name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -31,6 +33,7 @@
 
     <TextView
         android:id="@+id/descTextView"
+        android:transitionName="description"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
