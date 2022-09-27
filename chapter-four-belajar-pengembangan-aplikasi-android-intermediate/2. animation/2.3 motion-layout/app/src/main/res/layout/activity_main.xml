@@ -110,6 +110,45 @@
         app:layout_constraintTop_toBottomOf="@+id/logoMenu3"
         android:text="@string/title_menu_3" />
 
+    <ImageView
+        android:id="@+id/logoMenu4"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:src="@drawable/image_alumni_terpercaya"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:id="@+id/titleMenu4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/logoMenu4"
+        app:layout_constraintStart_toStartOf="@+id/logoMenu4"
+        app:layout_constraintTop_toBottomOf="@+id/logoMenu4"
+        android:text="@string/title_menu_4" />
+
+    <TextView
+        android:id="@+id/descMenu4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/titleMenu4"
+        app:layout_constraintStart_toStartOf="@+id/titleMenu4"
+        app:layout_constraintTop_toBottomOf="@+id/titleMenu4"
+        android:text="@string/desc_menu_4" />
+
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/menu1"
         android:layout_width="30dp"
