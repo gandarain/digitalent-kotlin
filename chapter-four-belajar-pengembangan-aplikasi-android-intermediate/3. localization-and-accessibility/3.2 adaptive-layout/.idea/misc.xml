@@ -8,6 +8,8 @@
         <entry key="app/src/main/res/drawable/ic_baseline_star_24.xml" value="0.105" />
         <entry key="app/src/main/res/drawable/rouded_background.xml" value="0.105" />
         <entry key="app/src/main/res/layout-land/activity_main.xml" value="0.34774774774774775" />
+        <entry key="app/src/main/res/layout-sw600dp-land/activity_main.xml" value="0.1588477366255144" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_main.xml" value="0.15078125" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18697916666666667" />
       </map>
     </option>
