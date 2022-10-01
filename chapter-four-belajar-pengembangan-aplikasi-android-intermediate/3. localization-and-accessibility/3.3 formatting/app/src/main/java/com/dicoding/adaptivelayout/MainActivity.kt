@@ -52,7 +52,10 @@ class MainActivity : AppCompatActivity() {
                 sizeTextView.text = size
                 descTextView.text = desc
                 priceTextView.text = price
-                dateTextView.text = getString(R.string.dateFormat, date)
+                dateTextView.text = getString(
+                    R.string.dateFormat,
+                    date.withDateFormat()
+                )
                 ratingTextView.text = getString(
                     R.string.ratingFormat,
                     rating.withNumberingFormat(),
