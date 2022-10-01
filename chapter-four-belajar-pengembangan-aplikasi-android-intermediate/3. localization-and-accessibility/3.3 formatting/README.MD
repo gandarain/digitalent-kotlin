@@ -1,10 +1,15 @@
-## Adaptive Layout
+## Formmating
+Date, Currency, and Number Format.
 
-#### Init Adaptive Layout Project
+#### Init Formatting Project
 
-#### Create Alternative Layout for Orientation Landscape
+#### Changing App Flow
 
-#### Create Alternative Layout for Orientation Landscape & Portrait for Tablet
+#### Numbering Format
+
+#### Date Format
+
+#### Currency Format
 
 #### Result
-![adaptive-layout](https://user-images.githubusercontent.com/27923352/192807006-b2edd47e-a161-4bda-89de-fa952516dc75.gif)
+![formatting](https://user-images.githubusercontent.com/27923352/193418370-3be4b0c2-20bc-4343-aa06-8991225046fa.gif)
