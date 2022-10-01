@@ -15,4 +15,11 @@
 
     <string name="dateFormat">Diunggah pada %1$s</string>
     <string name="ratingFormat">%1$s (%2$s)</string>
+
+    <string name="settingDescription">Ganti Bahasa</string>
+    <string name="previewDescription">"Gambar Sepatu"</string>
+    <string name="storeDescription">Dari %1$s</string>
+    <string name="sizeDescription">Berukuran %1$s</string>
+    <string name="colorDescription">Berwarna %1$s</string>
+    <string name="ratingDescription">Memiliki peringkat %1$s dari %2$s</string>
 </resources>

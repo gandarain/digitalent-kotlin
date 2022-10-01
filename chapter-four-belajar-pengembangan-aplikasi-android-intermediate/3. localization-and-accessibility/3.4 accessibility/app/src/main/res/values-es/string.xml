@@ -15,4 +15,11 @@
 
     <string name="dateFormat">Subido el %1$s</string>
     <string name="ratingFormat">%1$s (%2$s)</string>
+
+    <string name="settingDescription">Cambiar idioma</string>
+    <string name="previewDescription">"Imagen de zapatos"</string>
+    <string name="storeDescription">De %1$s</string>
+    <string name="sizeDescription">Talla  %1$s</string>
+    <string name="colorDescription">Coloreado %1$s</string>
+    <string name="ratingDescription">Tiene una calificación de %1$s de %2$s</string>
 </resources>
