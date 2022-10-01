@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         setupView()
         setupAction()
+        setupData()
     }
 
     private fun setupView() {
@@ -37,6 +38,23 @@ class MainActivity : AppCompatActivity() {
     private fun setupAction() {
         binding.settingImageView.setOnClickListener {
             startActivity(Intent(Settings.ACTION_LOCALE_SETTINGS))
+        }
+    }
+
+    private fun setupData() {
+        val data = RemoteDataSource(this@MainActivity)
+        data.getDetailProduct().apply {
+            binding.apply {
+                previewImageView.setImageResource(image)
+                nameTextView.text = name
+                storeTextView.text = store
+                colorTextView.text = color
+                sizeTextView.text = size
+                descTextView.text = desc
+                priceTextView.text = price
+                dateTextView.text = getString(R.string.dateFormat, date)
+                ratingTextView.text = getString(R.string.ratingFormat, rating, countRating)
+            }
         }
     }
 }
