@@ -12,9 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BoundService">
         <service
+            android:name=".MyBoundService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
             android:name=".MyBackgroundService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
         <service
             android:name=".MyForegroundService"
             android:enabled="true"
