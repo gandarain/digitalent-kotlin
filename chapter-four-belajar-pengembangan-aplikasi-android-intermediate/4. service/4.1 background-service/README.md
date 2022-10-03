@@ -1,5 +1,5 @@
 ## Background Service
-Background service akan berhenti ketika keluar dari aplikasi
+Background service akan berhenti ketika keluar dari aplikasi (kill app)
 
 #### Init Background Service Project
 
