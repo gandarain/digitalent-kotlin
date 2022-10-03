@@ -1,4 +1,5 @@
 ## Foreground Service
+Foreground service tetap berjalan meskipun di-kill dari sistem
 
 #### Init Foreground Service Project
 
