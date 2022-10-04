@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        soundId = sp.load(this, R.raw.clinking_glasses, 1)
+        soundId = sp.load(this, R.raw.clicking, 1)
 
         btnSound.setOnClickListener {
             if (spLoaded) {
