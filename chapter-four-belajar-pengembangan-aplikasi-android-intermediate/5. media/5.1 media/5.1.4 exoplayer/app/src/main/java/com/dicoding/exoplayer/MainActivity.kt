@@ -2,6 +2,9 @@ package com.dicoding.exoplayer
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.WindowInsetsControllerCompat
 import com.dicoding.exoplayer.databinding.ActivityMainBinding
 import com.google.android.exoplayer2.ExoPlayer
 import com.google.android.exoplayer2.MediaItem
@@ -24,6 +27,26 @@ class MainActivity : AppCompatActivity() {
         setContentView(viewBinding.root)
     }
 
+    private fun initializePlayer() {
+        val mediaItem = MediaItem.fromUri(URL_VIDEO_DICODING)
+        val anotherMediaItem = MediaItem.fromUri(URL_AUDIO)
+
+        player = ExoPlayer.Builder(this@MainActivity).build().also { exoPlayer ->
+            viewBinding.videoView.player = exoPlayer
+            exoPlayer.setMediaItem(mediaItem)
+            exoPlayer.addMediaItem(anotherMediaItem)
+            exoPlayer.prepare()
+        }
+    }
+
+    private fun hideSystemUI() {
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+        WindowInsetsControllerCompat(window, viewBinding.videoView).let { controller ->
+            controller.hide(WindowInsetsCompat.Type.systemBars())
+            controller.systemBarsBehavior = WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
+        }
+    }
+
     override fun onStart() {
         super.onStart()
         if (Util.SDK_INT > 23) {
@@ -33,6 +56,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
+        hideSystemUI()
         if (Util.SDK_INT <= 23 && player == null) {
             initializePlayer()
         }
@@ -49,18 +73,6 @@ class MainActivity : AppCompatActivity() {
         super.onStop()
         if (Util.SDK_INT > 23) {
             releasePlayer()
-        }
-    }
-
-    private fun initializePlayer() {
-        val mediaItem = MediaItem.fromUri(URL_VIDEO_DICODING)
-        val anotherMediaItem = MediaItem.fromUri(URL_AUDIO)
-
-        player = ExoPlayer.Builder(this@MainActivity).build().also { exoPlayer ->
-            viewBinding.videoView.player = exoPlayer
-            exoPlayer.setMediaItem(mediaItem)
-            exoPlayer.addMediaItem(anotherMediaItem)
-            exoPlayer.prepare()
         }
     }
 
