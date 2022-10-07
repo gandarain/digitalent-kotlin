@@ -60,3 +60,9 @@ fun rotateBitmap(bitmap: Bitmap, isBackCamera: Boolean = false): Bitmap {
         )
     }
 }
+
+// Untuk kasus Intent Camera
+fun createCustomTempFile(context: Context): File {
+    val storageDir: File? = context.getExternalFilesDir(Environment.DIRECTORY_PICTURES)
+    return File.createTempFile(timeStamp, ".jpg", storageDir)
+}

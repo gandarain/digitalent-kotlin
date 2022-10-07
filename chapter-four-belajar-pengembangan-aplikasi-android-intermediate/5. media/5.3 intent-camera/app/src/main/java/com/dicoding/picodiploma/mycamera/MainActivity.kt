@@ -5,6 +5,7 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
+import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
 import android.widget.Toast
@@ -12,6 +13,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.content.FileProvider
 import com.dicoding.picodiploma.mycamera.databinding.ActivityMainBinding
 import java.io.File
 
@@ -76,7 +78,18 @@ class MainActivity : AppCompatActivity() {
 
     private fun startTakePhoto() {
         val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-        launcherIntentCamera.launch(intent)
+        intent.resolveActivity(packageManager)
+
+        createCustomTempFile(applicationContext).also {
+            val photoURI: Uri = FileProvider.getUriForFile(
+                this@MainActivity,
+                "com.dicoding.picodiploma.mycamera",
+                it
+            )
+            currentPhotoPath = it.absolutePath
+            intent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI)
+            launcherIntentCamera.launch(intent)
+        }
     }
 
     private fun uploadImage() {
@@ -96,12 +109,17 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private lateinit var currentPhotoPath: String
+
     private val launcherIntentCamera = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
     ) {
         if (it.resultCode == RESULT_OK) {
-            val imageBitmap = it.data?.extras?.get("data") as Bitmap
-            binding.previewImageView.setImageBitmap(imageBitmap)
+            val myFile = File(currentPhotoPath)
+
+            val result = BitmapFactory.decodeFile(myFile.path)
+
+            binding.previewImageView.setImageBitmap(result)
         }
     }
 
