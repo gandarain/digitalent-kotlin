@@ -3,8 +3,10 @@ package com.dicoding.picodiploma.mycamera
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.os.Bundle
+import android.provider.MediaStore
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -73,7 +75,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun startTakePhoto() {
-        Toast.makeText(this, "Fitur ini belum tersedia", Toast.LENGTH_SHORT).show()
+        val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+        launcherIntentCamera.launch(intent)
     }
 
     private fun uploadImage() {
@@ -90,6 +93,15 @@ class MainActivity : AppCompatActivity() {
             val result = BitmapFactory.decodeFile(myFile.path)
 
             binding.previewImageView.setImageBitmap(result)
+        }
+    }
+
+    private val launcherIntentCamera = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) {
+        if (it.resultCode == RESULT_OK) {
+            val imageBitmap = it.data?.extras?.get("data") as Bitmap
+            binding.previewImageView.setImageBitmap(imageBitmap)
         }
     }
 
