@@ -1,14 +1,10 @@
-## Camera X
+## Intent Camera
 
-#### Init CameraX Project
+#### Init Intent Camera based on Camera X project
 
-#### Show CameraX in App
+#### Added registerForActivityResult to capture image from Intent Camera
 
-#### Permission Camera
-
-#### Taking Pictures from Camera
-
-#### Show Camera Result
+#### Added configuration to take pictures at original size
 
 #### Result
-![camera-x](https://user-images.githubusercontent.com/27923352/194086688-4975cb54-226e-4aed-8334-f3514d00d72f.gif)
+![intent-camera](https://user-images.githubusercontent.com/27923352/194543746-9042ae3f-3c18-41f2-9cf5-867c1bc8f832.png)
