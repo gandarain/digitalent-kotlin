@@ -1,0 +1,150 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.dicoding.picodiploma.mycamera"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml
+10
+11    <uses-feature android:name="android.hardware.camera" />
+11-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:5:5-60
+11-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:5:19-57
+12
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:6:5-65
+13-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:6:22-62
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:8:5-80
+14-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:8:22-77
+15    <uses-permission
+15-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:9:5-10:38
+16        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+16-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:9:22-78
+17        android:maxSdkVersion="18" />
+17-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:10:9-35
+18    <uses-permission android:name="android.permission.INTERNET" />
+18-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:12:5-67
+18-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:12:22-64
+19
+20    <queries>
+20-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:47:5-53:15
+21        <intent>
+21-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:48:9-52:18
+22            <action android:name="android.intent.action.VIEW" />
+22-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:49:13-65
+22-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:49:21-62
+23
+24            <category android:name="android.intent.category.BROWSABLE" />
+24-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:50:13-74
+24-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:50:23-71
+25
+26            <data android:scheme="https" />
+26-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:51:13-44
+26-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:51:19-41
+27        </intent>
+28    </queries>
+29
+30    <application
+30-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:14:5-45:19
+31        android:allowBackup="true"
+31-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:15:9-35
+32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+32-->[androidx.core:core:1.7.0] /Users/mac/.gradle/caches/transforms-3/0a679862f6c55d82fb9a949f1fd4603f/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+33        android:debuggable="true"
+34        android:icon="@mipmap/ic_launcher"
+34-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:16:9-43
+35        android:label="@string/app_name"
+35-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:17:9-41
+36        android:roundIcon="@mipmap/ic_launcher_round"
+36-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:18:9-54
+37        android:supportsRtl="true"
+37-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:19:9-35
+38        android:testOnly="true"
+39        android:theme="@style/Theme.MyCamera" >
+39-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:20:9-46
+40        <activity
+40-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:22:9-24:39
+41            android:name="com.dicoding.picodiploma.mycamera.CameraActivity"
+41-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:23:13-43
+42            android:exported="false" />
+42-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:24:13-37
+43        <activity
+43-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:26:9-34:20
+44            android:name="com.dicoding.picodiploma.mycamera.MainActivity"
+44-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:27:13-41
+45            android:exported="true" >
+45-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:28:13-36
+46            <intent-filter>
+46-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:29:13-33:29
+47                <action android:name="android.intent.action.MAIN" />
+47-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:30:17-69
+47-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:30:25-66
+48
+49                <category android:name="android.intent.category.LAUNCHER" />
+49-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:32:17-77
+49-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:32:27-74
+50            </intent-filter>
+51        </activity>
+52
+53        <provider
+53-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:36:9-44:20
+54            android:name="androidx.core.content.FileProvider"
+54-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:37:13-62
+55            android:authorities="com.dicoding.picodiploma.mycamera"
+55-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:38:13-68
+56            android:exported="false"
+56-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:39:13-37
+57            android:grantUriPermissions="true" >
+57-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:40:13-47
+58            <meta-data
+58-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:41:13-43:53
+59                android:name="android.support.FILE_PROVIDER_PATHS"
+59-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:42:17-67
+60                android:resource="@xml/file_paths" />
+60-->/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:43:17-51
+61        </provider>
+62
+63        <service
+63-->[androidx.camera:camera-camera2:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/26355b675a789413e749b820a35b1dae/transformed/jetified-camera-camera2-1.1.0-beta02/AndroidManifest.xml:26:9-35:19
+64            android:name="androidx.camera.core.impl.MetadataHolderService"
+64-->[androidx.camera:camera-camera2:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/26355b675a789413e749b820a35b1dae/transformed/jetified-camera-camera2-1.1.0-beta02/AndroidManifest.xml:27:13-75
+65            android:enabled="false"
+65-->[androidx.camera:camera-camera2:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/26355b675a789413e749b820a35b1dae/transformed/jetified-camera-camera2-1.1.0-beta02/AndroidManifest.xml:28:13-36
+66            android:exported="false" >
+66-->[androidx.camera:camera-camera2:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/26355b675a789413e749b820a35b1dae/transformed/jetified-camera-camera2-1.1.0-beta02/AndroidManifest.xml:29:13-37
+67            <meta-data
+67-->[androidx.camera:camera-camera2:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/26355b675a789413e749b820a35b1dae/transformed/jetified-camera-camera2-1.1.0-beta02/AndroidManifest.xml:32:13-34:89
+68                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+68-->[androidx.camera:camera-camera2:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/26355b675a789413e749b820a35b1dae/transformed/jetified-camera-camera2-1.1.0-beta02/AndroidManifest.xml:33:17-103
+69                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+69-->[androidx.camera:camera-camera2:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/26355b675a789413e749b820a35b1dae/transformed/jetified-camera-camera2-1.1.0-beta02/AndroidManifest.xml:34:17-86
+70        </service>
+71
+72        <provider
+72-->[androidx.emoji2:emoji2:1.0.0] /Users/mac/.gradle/caches/transforms-3/dc4e900b39a7fd162f78e4f1c5ff925b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+73            android:name="androidx.startup.InitializationProvider"
+73-->[androidx.emoji2:emoji2:1.0.0] /Users/mac/.gradle/caches/transforms-3/dc4e900b39a7fd162f78e4f1c5ff925b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+74            android:authorities="com.dicoding.picodiploma.mycamera.androidx-startup"
+74-->[androidx.emoji2:emoji2:1.0.0] /Users/mac/.gradle/caches/transforms-3/dc4e900b39a7fd162f78e4f1c5ff925b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+75            android:exported="false" >
+75-->[androidx.emoji2:emoji2:1.0.0] /Users/mac/.gradle/caches/transforms-3/dc4e900b39a7fd162f78e4f1c5ff925b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+76            <meta-data
+76-->[androidx.emoji2:emoji2:1.0.0] /Users/mac/.gradle/caches/transforms-3/dc4e900b39a7fd162f78e4f1c5ff925b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+77                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+77-->[androidx.emoji2:emoji2:1.0.0] /Users/mac/.gradle/caches/transforms-3/dc4e900b39a7fd162f78e4f1c5ff925b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+78                android:value="androidx.startup" />
+78-->[androidx.emoji2:emoji2:1.0.0] /Users/mac/.gradle/caches/transforms-3/dc4e900b39a7fd162f78e4f1c5ff925b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+79            <meta-data
+79-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/mac/.gradle/caches/transforms-3/a01ba094378da2cbf578182aee9cfcb9/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+80                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+80-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/mac/.gradle/caches/transforms-3/a01ba094378da2cbf578182aee9cfcb9/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+81                android:value="androidx.startup" />
+81-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/mac/.gradle/caches/transforms-3/a01ba094378da2cbf578182aee9cfcb9/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+82        </provider>
+83    </application>
+84
+85</manifest>

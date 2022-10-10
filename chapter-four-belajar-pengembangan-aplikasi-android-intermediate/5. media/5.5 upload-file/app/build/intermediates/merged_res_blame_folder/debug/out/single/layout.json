@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_camera.xml",
+        "source": "/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/res/layout/activity_camera.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/res/layout/activity_main.xml"
+    }
+]

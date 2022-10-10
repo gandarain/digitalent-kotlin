@@ -1,0 +1,331 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:2:1-55:12
+MERGED from [androidx.databinding:viewbinding:7.1.0] /Users/mac/.gradle/caches/transforms-3/188d91025299c7e0862b5850bf41bb59/transformed/jetified-viewbinding-7.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.7.0] /Users/mac/.gradle/caches/transforms-3/72cacf48e5f038396b97d8eb788f1fab/transformed/jetified-core-ktx-1.7.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.material:material:1.5.0] /Users/mac/.gradle/caches/transforms-3/b21dd1d969b1b90338eb5a4fcebf64d6/transformed/material-1.5.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] /Users/mac/.gradle/caches/transforms-3/afcfaec32485a108823941ac4a541d55/transformed/constraintlayout-2.1.3/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.camera:camera-view:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/18e22382ff2b1e20e80c2dd4a1a9e1a5/transformed/jetified-camera-view-1.1.0-beta02/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.4.1] /Users/mac/.gradle/caches/transforms-3/23b76ffe80af4d27184e38abe59be150/transformed/appcompat-1.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.camera:camera-camera2:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/26355b675a789413e749b820a35b1dae/transformed/jetified-camera-camera2-1.1.0-beta02/AndroidManifest.xml:17:1-38:12
+MERGED from [androidx.camera:camera-lifecycle:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/0479f751f8aa90949a9fb24f84c3e10d/transformed/jetified-camera-lifecycle-1.1.0-beta02/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/mac/.gradle/caches/transforms-3/95a596a8cadca047e846ba9721ec1368/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/mac/.gradle/caches/transforms-3/b96b833dcaccb5cb04f046d9d770a730/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.4] /Users/mac/.gradle/caches/transforms-3/224a37a5594b1492e934dc7d5662c247/transformed/jetified-activity-1.2.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /Users/mac/.gradle/caches/transforms-3/2ef9de7b9fa7590fcc9dea63e88d195f/transformed/jetified-appcompat-resources-1.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /Users/mac/.gradle/caches/transforms-3/bf579aea369988a45bf76a444dad6c84/transformed/jetified-emoji2-views-helper-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/mac/.gradle/caches/transforms-3/dc4e900b39a7fd162f78e4f1c5ff925b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/mac/.gradle/caches/transforms-3/1dc6746a54b7c02104af2e18a1d5bf51/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/mac/.gradle/caches/transforms-3/a0596bdc7c4707845642f0e636d53fc8/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/mac/.gradle/caches/transforms-3/9108d08e260abc344dda1d01fa35f613/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/mac/.gradle/caches/transforms-3/83a6da91e30c84334b3fd65973a0d1a7/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/mac/.gradle/caches/transforms-3/ba727228c51970f866eaf71bba7053ce/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/mac/.gradle/caches/transforms-3/50ebb7e7052d5c2dfef705660904f48c/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.camera:camera-core:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/8c3d0caea06d7ebe996cd4671456da41/transformed/jetified-camera-core-1.1.0-beta02/AndroidManifest.xml:17:1-38:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/mac/.gradle/caches/transforms-3/736c08303bb4d769295a0199183b8094/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/mac/.gradle/caches/transforms-3/1cfd12414e98a59c72d1b24d7af0a0b9/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/mac/.gradle/caches/transforms-3/7507ee9fef9e4584133650ced29319dd/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/mac/.gradle/caches/transforms-3/0b85103886e0a9e2f6c926ea7c5a615e/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.1.0] /Users/mac/.gradle/caches/transforms-3/d188f79d35e4668ba7ee2755007fc27b/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.7.0] /Users/mac/.gradle/caches/transforms-3/0a679862f6c55d82fb9a949f1fd4603f/transformed/core-1.7.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mac/.gradle/caches/transforms-3/88542b646e8ae4a5c6ab0a927b14b4a1/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/mac/.gradle/caches/transforms-3/a78216fadd5fba13aa7f69369a1faff5/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/mac/.gradle/caches/transforms-3/b83966a1b8de0527fd1cf3a37b313b91/transformed/jetified-savedstate-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/mac/.gradle/caches/transforms-3/d2f341836bc7cc8b81fc5c17196b35c6/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/mac/.gradle/caches/transforms-3/f65d52342d9c88af4c02870300222bc1/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/mac/.gradle/caches/transforms-3/e0d8042bc68afc3ea420b67e445882a7/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/mac/.gradle/caches/transforms-3/a01ba094378da2cbf578182aee9cfcb9/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/mac/.gradle/caches/transforms-3/d02de822bbaefd60bda5fd4142b495dd/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/mac/.gradle/caches/transforms-3/2214bbbee9ebf087c7d1e7633f91cd57/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] /Users/mac/.gradle/caches/transforms-3/54848a99d839287835249108000a3373/transformed/lifecycle-livedata-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/mac/.gradle/caches/transforms-3/8c4ad5105c722a310f79765f69344545/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /Users/mac/.gradle/caches/transforms-3/0a62a25794022100b5d61082ba94b7f3/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/mac/.gradle/caches/transforms-3/9c3056fecf78801760b48cc58ac72a3c/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.2] /Users/mac/.gradle/caches/transforms-3/069eb216b2dac003d17eaf56bc90a771/transformed/exifinterface-1.3.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mac/.gradle/caches/transforms-3/e64fef9e2eff94f82b0cf2bb04f38caa/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/mac/.gradle/caches/transforms-3/00b686bcd2f0791d8d3f5e021d898088/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/mac/.gradle/caches/transforms-3/687404e525885db7c85d59bd690fd292/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/mac/.gradle/caches/transforms-3/ad7d2c64d7e0a72e024491ba50d4cdcb/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/mac/.gradle/caches/transforms-3/e98dacd9d17cc4f27db877ffcf1d885a/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:2:1-55:12
+	package
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:3:5-48
+		INJECTED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:2:1-55:12
+		INJECTED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:2:1-55:12
+		INJECTED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:2:11-69
+uses-feature#android.hardware.camera
+ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:5:5-60
+	android:name
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:5:19-57
+uses-permission#android.permission.CAMERA
+ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:6:5-65
+	android:name
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:6:22-62
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:8:5-80
+	android:name
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:8:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:9:5-10:38
+	android:maxSdkVersion
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:10:9-35
+	android:name
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:9:22-78
+uses-permission#android.permission.INTERNET
+ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:12:5-67
+	android:name
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:12:22-64
+application
+ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:14:5-45:19
+MERGED from [com.google.android.material:material:1.5.0] /Users/mac/.gradle/caches/transforms-3/b21dd1d969b1b90338eb5a4fcebf64d6/transformed/material-1.5.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.5.0] /Users/mac/.gradle/caches/transforms-3/b21dd1d969b1b90338eb5a4fcebf64d6/transformed/material-1.5.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] /Users/mac/.gradle/caches/transforms-3/afcfaec32485a108823941ac4a541d55/transformed/constraintlayout-2.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] /Users/mac/.gradle/caches/transforms-3/afcfaec32485a108823941ac4a541d55/transformed/constraintlayout-2.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.camera:camera-camera2:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/26355b675a789413e749b820a35b1dae/transformed/jetified-camera-camera2-1.1.0-beta02/AndroidManifest.xml:25:5-36:19
+MERGED from [androidx.camera:camera-camera2:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/26355b675a789413e749b820a35b1dae/transformed/jetified-camera-camera2-1.1.0-beta02/AndroidManifest.xml:25:5-36:19
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/mac/.gradle/caches/transforms-3/dc4e900b39a7fd162f78e4f1c5ff925b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/mac/.gradle/caches/transforms-3/dc4e900b39a7fd162f78e4f1c5ff925b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.camera:camera-core:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/8c3d0caea06d7ebe996cd4671456da41/transformed/jetified-camera-core-1.1.0-beta02/AndroidManifest.xml:25:5-36:19
+MERGED from [androidx.camera:camera-core:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/8c3d0caea06d7ebe996cd4671456da41/transformed/jetified-camera-core-1.1.0-beta02/AndroidManifest.xml:25:5-36:19
+MERGED from [androidx.core:core:1.7.0] /Users/mac/.gradle/caches/transforms-3/0a679862f6c55d82fb9a949f1fd4603f/transformed/core-1.7.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.7.0] /Users/mac/.gradle/caches/transforms-3/0a679862f6c55d82fb9a949f1fd4603f/transformed/core-1.7.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/mac/.gradle/caches/transforms-3/e0d8042bc68afc3ea420b67e445882a7/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/mac/.gradle/caches/transforms-3/e0d8042bc68afc3ea420b67e445882a7/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/mac/.gradle/caches/transforms-3/a01ba094378da2cbf578182aee9cfcb9/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/mac/.gradle/caches/transforms-3/a01ba094378da2cbf578182aee9cfcb9/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/mac/.gradle/caches/transforms-3/d02de822bbaefd60bda5fd4142b495dd/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/mac/.gradle/caches/transforms-3/d02de822bbaefd60bda5fd4142b495dd/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:25:5-31:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.7.0] /Users/mac/.gradle/caches/transforms-3/0a679862f6c55d82fb9a949f1fd4603f/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:19:9-35
+	android:label
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:17:9-41
+	android:roundIcon
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:18:9-54
+	android:icon
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:16:9-43
+	android:allowBackup
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:15:9-35
+	android:theme
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:20:9-46
+activity#com.dicoding.picodiploma.mycamera.CameraActivity
+ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:22:9-24:39
+	android:exported
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:24:13-37
+	android:name
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:23:13-43
+activity#com.dicoding.picodiploma.mycamera.MainActivity
+ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:26:9-34:20
+	android:exported
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:28:13-36
+	android:name
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:27:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:29:13-33:29
+action#android.intent.action.MAIN
+ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:30:17-69
+	android:name
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:30:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:32:17-77
+	android:name
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:32:27-74
+provider#androidx.core.content.FileProvider
+ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:36:9-44:20
+	android:grantUriPermissions
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:40:13-47
+	android:authorities
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:38:13-68
+	android:exported
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:39:13-37
+	android:name
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:37:13-62
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:41:13-43:53
+	android:resource
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:43:17-51
+	android:name
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:42:17-67
+queries
+ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:47:5-53:15
+intent#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+data:scheme:https
+ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:48:9-52:18
+action#android.intent.action.VIEW
+ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:49:13-65
+	android:name
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:49:21-62
+category#android.intent.category.BROWSABLE
+ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:50:13-74
+	android:name
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:50:23-71
+data
+ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:51:13-44
+	android:scheme
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml:51:19-41
+uses-sdk
+INJECTED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml
+INJECTED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:7.1.0] /Users/mac/.gradle/caches/transforms-3/188d91025299c7e0862b5850bf41bb59/transformed/jetified-viewbinding-7.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:viewbinding:7.1.0] /Users/mac/.gradle/caches/transforms-3/188d91025299c7e0862b5850bf41bb59/transformed/jetified-viewbinding-7.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.7.0] /Users/mac/.gradle/caches/transforms-3/72cacf48e5f038396b97d8eb788f1fab/transformed/jetified-core-ktx-1.7.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.7.0] /Users/mac/.gradle/caches/transforms-3/72cacf48e5f038396b97d8eb788f1fab/transformed/jetified-core-ktx-1.7.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.material:material:1.5.0] /Users/mac/.gradle/caches/transforms-3/b21dd1d969b1b90338eb5a4fcebf64d6/transformed/material-1.5.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.5.0] /Users/mac/.gradle/caches/transforms-3/b21dd1d969b1b90338eb5a4fcebf64d6/transformed/material-1.5.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] /Users/mac/.gradle/caches/transforms-3/afcfaec32485a108823941ac4a541d55/transformed/constraintlayout-2.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] /Users/mac/.gradle/caches/transforms-3/afcfaec32485a108823941ac4a541d55/transformed/constraintlayout-2.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.camera:camera-view:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/18e22382ff2b1e20e80c2dd4a1a9e1a5/transformed/jetified-camera-view-1.1.0-beta02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.camera:camera-view:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/18e22382ff2b1e20e80c2dd4a1a9e1a5/transformed/jetified-camera-view-1.1.0-beta02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.4.1] /Users/mac/.gradle/caches/transforms-3/23b76ffe80af4d27184e38abe59be150/transformed/appcompat-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.4.1] /Users/mac/.gradle/caches/transforms-3/23b76ffe80af4d27184e38abe59be150/transformed/appcompat-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.camera:camera-camera2:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/26355b675a789413e749b820a35b1dae/transformed/jetified-camera-camera2-1.1.0-beta02/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.camera:camera-camera2:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/26355b675a789413e749b820a35b1dae/transformed/jetified-camera-camera2-1.1.0-beta02/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.camera:camera-lifecycle:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/0479f751f8aa90949a9fb24f84c3e10d/transformed/jetified-camera-lifecycle-1.1.0-beta02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.camera:camera-lifecycle:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/0479f751f8aa90949a9fb24f84c3e10d/transformed/jetified-camera-lifecycle-1.1.0-beta02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/mac/.gradle/caches/transforms-3/95a596a8cadca047e846ba9721ec1368/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/mac/.gradle/caches/transforms-3/95a596a8cadca047e846ba9721ec1368/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/mac/.gradle/caches/transforms-3/b96b833dcaccb5cb04f046d9d770a730/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/mac/.gradle/caches/transforms-3/b96b833dcaccb5cb04f046d9d770a730/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] /Users/mac/.gradle/caches/transforms-3/224a37a5594b1492e934dc7d5662c247/transformed/jetified-activity-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] /Users/mac/.gradle/caches/transforms-3/224a37a5594b1492e934dc7d5662c247/transformed/jetified-activity-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /Users/mac/.gradle/caches/transforms-3/2ef9de7b9fa7590fcc9dea63e88d195f/transformed/jetified-appcompat-resources-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /Users/mac/.gradle/caches/transforms-3/2ef9de7b9fa7590fcc9dea63e88d195f/transformed/jetified-appcompat-resources-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /Users/mac/.gradle/caches/transforms-3/bf579aea369988a45bf76a444dad6c84/transformed/jetified-emoji2-views-helper-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /Users/mac/.gradle/caches/transforms-3/bf579aea369988a45bf76a444dad6c84/transformed/jetified-emoji2-views-helper-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/mac/.gradle/caches/transforms-3/dc4e900b39a7fd162f78e4f1c5ff925b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/mac/.gradle/caches/transforms-3/dc4e900b39a7fd162f78e4f1c5ff925b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/mac/.gradle/caches/transforms-3/1dc6746a54b7c02104af2e18a1d5bf51/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/mac/.gradle/caches/transforms-3/1dc6746a54b7c02104af2e18a1d5bf51/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/mac/.gradle/caches/transforms-3/a0596bdc7c4707845642f0e636d53fc8/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/mac/.gradle/caches/transforms-3/a0596bdc7c4707845642f0e636d53fc8/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/mac/.gradle/caches/transforms-3/9108d08e260abc344dda1d01fa35f613/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/mac/.gradle/caches/transforms-3/9108d08e260abc344dda1d01fa35f613/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] /Users/mac/.gradle/caches/transforms-3/83a6da91e30c84334b3fd65973a0d1a7/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/mac/.gradle/caches/transforms-3/83a6da91e30c84334b3fd65973a0d1a7/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/mac/.gradle/caches/transforms-3/ba727228c51970f866eaf71bba7053ce/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/mac/.gradle/caches/transforms-3/ba727228c51970f866eaf71bba7053ce/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/mac/.gradle/caches/transforms-3/50ebb7e7052d5c2dfef705660904f48c/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/mac/.gradle/caches/transforms-3/50ebb7e7052d5c2dfef705660904f48c/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.camera:camera-core:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/8c3d0caea06d7ebe996cd4671456da41/transformed/jetified-camera-core-1.1.0-beta02/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.camera:camera-core:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/8c3d0caea06d7ebe996cd4671456da41/transformed/jetified-camera-core-1.1.0-beta02/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/mac/.gradle/caches/transforms-3/736c08303bb4d769295a0199183b8094/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/mac/.gradle/caches/transforms-3/736c08303bb4d769295a0199183b8094/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/mac/.gradle/caches/transforms-3/1cfd12414e98a59c72d1b24d7af0a0b9/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/mac/.gradle/caches/transforms-3/1cfd12414e98a59c72d1b24d7af0a0b9/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/mac/.gradle/caches/transforms-3/7507ee9fef9e4584133650ced29319dd/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/mac/.gradle/caches/transforms-3/7507ee9fef9e4584133650ced29319dd/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/mac/.gradle/caches/transforms-3/0b85103886e0a9e2f6c926ea7c5a615e/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/mac/.gradle/caches/transforms-3/0b85103886e0a9e2f6c926ea7c5a615e/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/mac/.gradle/caches/transforms-3/d188f79d35e4668ba7ee2755007fc27b/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/mac/.gradle/caches/transforms-3/d188f79d35e4668ba7ee2755007fc27b/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.7.0] /Users/mac/.gradle/caches/transforms-3/0a679862f6c55d82fb9a949f1fd4603f/transformed/core-1.7.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.7.0] /Users/mac/.gradle/caches/transforms-3/0a679862f6c55d82fb9a949f1fd4603f/transformed/core-1.7.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mac/.gradle/caches/transforms-3/88542b646e8ae4a5c6ab0a927b14b4a1/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mac/.gradle/caches/transforms-3/88542b646e8ae4a5c6ab0a927b14b4a1/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/mac/.gradle/caches/transforms-3/a78216fadd5fba13aa7f69369a1faff5/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/mac/.gradle/caches/transforms-3/a78216fadd5fba13aa7f69369a1faff5/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/mac/.gradle/caches/transforms-3/b83966a1b8de0527fd1cf3a37b313b91/transformed/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/mac/.gradle/caches/transforms-3/b83966a1b8de0527fd1cf3a37b313b91/transformed/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/mac/.gradle/caches/transforms-3/d2f341836bc7cc8b81fc5c17196b35c6/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/mac/.gradle/caches/transforms-3/d2f341836bc7cc8b81fc5c17196b35c6/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/mac/.gradle/caches/transforms-3/f65d52342d9c88af4c02870300222bc1/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/mac/.gradle/caches/transforms-3/f65d52342d9c88af4c02870300222bc1/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/mac/.gradle/caches/transforms-3/e0d8042bc68afc3ea420b67e445882a7/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/mac/.gradle/caches/transforms-3/e0d8042bc68afc3ea420b67e445882a7/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/mac/.gradle/caches/transforms-3/a01ba094378da2cbf578182aee9cfcb9/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/mac/.gradle/caches/transforms-3/a01ba094378da2cbf578182aee9cfcb9/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/mac/.gradle/caches/transforms-3/d02de822bbaefd60bda5fd4142b495dd/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/mac/.gradle/caches/transforms-3/d02de822bbaefd60bda5fd4142b495dd/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/mac/.gradle/caches/transforms-3/2214bbbee9ebf087c7d1e7633f91cd57/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/mac/.gradle/caches/transforms-3/2214bbbee9ebf087c7d1e7633f91cd57/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] /Users/mac/.gradle/caches/transforms-3/54848a99d839287835249108000a3373/transformed/lifecycle-livedata-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] /Users/mac/.gradle/caches/transforms-3/54848a99d839287835249108000a3373/transformed/lifecycle-livedata-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/mac/.gradle/caches/transforms-3/8c4ad5105c722a310f79765f69344545/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/mac/.gradle/caches/transforms-3/8c4ad5105c722a310f79765f69344545/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /Users/mac/.gradle/caches/transforms-3/0a62a25794022100b5d61082ba94b7f3/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /Users/mac/.gradle/caches/transforms-3/0a62a25794022100b5d61082ba94b7f3/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/mac/.gradle/caches/transforms-3/9c3056fecf78801760b48cc58ac72a3c/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/mac/.gradle/caches/transforms-3/9c3056fecf78801760b48cc58ac72a3c/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.2] /Users/mac/.gradle/caches/transforms-3/069eb216b2dac003d17eaf56bc90a771/transformed/exifinterface-1.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.2] /Users/mac/.gradle/caches/transforms-3/069eb216b2dac003d17eaf56bc90a771/transformed/exifinterface-1.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mac/.gradle/caches/transforms-3/e64fef9e2eff94f82b0cf2bb04f38caa/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mac/.gradle/caches/transforms-3/e64fef9e2eff94f82b0cf2bb04f38caa/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/mac/.gradle/caches/transforms-3/00b686bcd2f0791d8d3f5e021d898088/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/mac/.gradle/caches/transforms-3/00b686bcd2f0791d8d3f5e021d898088/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/mac/.gradle/caches/transforms-3/687404e525885db7c85d59bd690fd292/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/mac/.gradle/caches/transforms-3/687404e525885db7c85d59bd690fd292/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/mac/.gradle/caches/transforms-3/ad7d2c64d7e0a72e024491ba50d4cdcb/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/mac/.gradle/caches/transforms-3/ad7d2c64d7e0a72e024491ba50d4cdcb/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/mac/.gradle/caches/transforms-3/e98dacd9d17cc4f27db877ffcf1d885a/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/mac/.gradle/caches/transforms-3/e98dacd9d17cc4f27db877ffcf1d885a/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml
+INJECTED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mac/Documents/Learn/kotlin/digitalent-kotlin/chapter-four-belajar-pengembangan-aplikasi-android-intermediate/5. media/5.5 upload-file/app/src/main/AndroidManifest.xml
+service#androidx.camera.core.impl.MetadataHolderService
+ADDED from [androidx.camera:camera-camera2:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/26355b675a789413e749b820a35b1dae/transformed/jetified-camera-camera2-1.1.0-beta02/AndroidManifest.xml:26:9-35:19
+MERGED from [androidx.camera:camera-core:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/8c3d0caea06d7ebe996cd4671456da41/transformed/jetified-camera-core-1.1.0-beta02/AndroidManifest.xml:31:9-35:45
+MERGED from [androidx.camera:camera-core:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/8c3d0caea06d7ebe996cd4671456da41/transformed/jetified-camera-core-1.1.0-beta02/AndroidManifest.xml:31:9-35:45
+	tools:node
+		ADDED from [androidx.camera:camera-camera2:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/26355b675a789413e749b820a35b1dae/transformed/jetified-camera-camera2-1.1.0-beta02/AndroidManifest.xml:31:13-31
+	android:enabled
+		ADDED from [androidx.camera:camera-camera2:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/26355b675a789413e749b820a35b1dae/transformed/jetified-camera-camera2-1.1.0-beta02/AndroidManifest.xml:28:13-36
+	android:exported
+		ADDED from [androidx.camera:camera-camera2:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/26355b675a789413e749b820a35b1dae/transformed/jetified-camera-camera2-1.1.0-beta02/AndroidManifest.xml:29:13-37
+	tools:ignore
+		ADDED from [androidx.camera:camera-camera2:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/26355b675a789413e749b820a35b1dae/transformed/jetified-camera-camera2-1.1.0-beta02/AndroidManifest.xml:30:13-42
+	android:name
+		ADDED from [androidx.camera:camera-camera2:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/26355b675a789413e749b820a35b1dae/transformed/jetified-camera-camera2-1.1.0-beta02/AndroidManifest.xml:27:13-75
+meta-data#androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER
+ADDED from [androidx.camera:camera-camera2:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/26355b675a789413e749b820a35b1dae/transformed/jetified-camera-camera2-1.1.0-beta02/AndroidManifest.xml:32:13-34:89
+	android:value
+		ADDED from [androidx.camera:camera-camera2:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/26355b675a789413e749b820a35b1dae/transformed/jetified-camera-camera2-1.1.0-beta02/AndroidManifest.xml:34:17-86
+	android:name
+		ADDED from [androidx.camera:camera-camera2:1.1.0-beta02] /Users/mac/.gradle/caches/transforms-3/26355b675a789413e749b820a35b1dae/transformed/jetified-camera-camera2-1.1.0-beta02/AndroidManifest.xml:33:17-103
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/mac/.gradle/caches/transforms-3/dc4e900b39a7fd162f78e4f1c5ff925b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/mac/.gradle/caches/transforms-3/a01ba094378da2cbf578182aee9cfcb9/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/mac/.gradle/caches/transforms-3/a01ba094378da2cbf578182aee9cfcb9/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/mac/.gradle/caches/transforms-3/d02de822bbaefd60bda5fd4142b495dd/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/mac/.gradle/caches/transforms-3/d02de822bbaefd60bda5fd4142b495dd/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/mac/.gradle/caches/transforms-3/dc4e900b39a7fd162f78e4f1c5ff925b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:30:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/mac/.gradle/caches/transforms-3/dc4e900b39a7fd162f78e4f1c5ff925b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/mac/.gradle/caches/transforms-3/dc4e900b39a7fd162f78e4f1c5ff925b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/mac/.gradle/caches/transforms-3/dc4e900b39a7fd162f78e4f1c5ff925b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/mac/.gradle/caches/transforms-3/dc4e900b39a7fd162f78e4f1c5ff925b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/mac/.gradle/caches/transforms-3/dc4e900b39a7fd162f78e4f1c5ff925b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/mac/.gradle/caches/transforms-3/dc4e900b39a7fd162f78e4f1c5ff925b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/mac/.gradle/caches/transforms-3/a01ba094378da2cbf578182aee9cfcb9/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/mac/.gradle/caches/transforms-3/a01ba094378da2cbf578182aee9cfcb9/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/mac/.gradle/caches/transforms-3/a01ba094378da2cbf578182aee9cfcb9/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
