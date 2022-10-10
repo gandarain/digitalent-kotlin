@@ -19,6 +19,9 @@ import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
 import okhttp3.RequestBody.Companion.asRequestBody
 import okhttp3.RequestBody.Companion.toRequestBody
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 import java.io.File
 
 class MainActivity : AppCompatActivity() {
@@ -112,8 +115,29 @@ class MainActivity : AppCompatActivity() {
                 file.name,
                 requestImageFile
             )
+
+            val service = ApiConfig().getApiService().uploadImage(imageMultipart, description)
+
+            service.enqueue(object : Callback<FileUploadResponse> {
+                override fun onResponse(
+                    call: Call<FileUploadResponse>,
+                    response: Response<FileUploadResponse>
+                ) {
+                    if (response.isSuccessful) {
+                        val responseBody = response.body()
+                        if (responseBody != null && !responseBody.error) {
+                            Toast.makeText(this@MainActivity, responseBody.message, Toast.LENGTH_SHORT).show()
+                        }
+                    } else {
+                        Toast.makeText(this@MainActivity, response.message(), Toast.LENGTH_SHORT).show()
+                    }
+                }
+                override fun onFailure(call: Call<FileUploadResponse>, t: Throwable) {
+                    Toast.makeText(this@MainActivity, "Gagal instance Retrofit", Toast.LENGTH_SHORT).show()
+                }
+            })
         } else {
-            Toast.makeText(this@MainActivity, "Silahkan masukkan berkas gambar terlebih dahulu", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@MainActivity, "Silakan masukkan berkas gambar terlebih dahulu.", Toast.LENGTH_SHORT).show()
         }
     }
 
