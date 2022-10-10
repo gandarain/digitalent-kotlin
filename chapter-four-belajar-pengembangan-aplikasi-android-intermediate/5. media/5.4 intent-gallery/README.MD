@@ -1,10 +1,10 @@
-## Intent Camera
+## Intent Gallery
 
-#### Init Intent Camera based on Camera X project
+#### Init Intent Gallery based Intent Camera
 
-#### Added registerForActivityResult to capture image from Intent Camera
+#### Create function util to convert URI to file
 
-#### Added configuration to take pictures at original size
+#### Implement launcherIntentGallery & startGallery
 
 #### Result
-![intent-camera](https://user-images.githubusercontent.com/27923352/194543746-9042ae3f-3c18-41f2-9cf5-867c1bc8f832.png)
+![intent-gallery](https://user-images.githubusercontent.com/27923352/194875568-f259c375-74ea-420b-8db3-61b8b3d4649c.png)
