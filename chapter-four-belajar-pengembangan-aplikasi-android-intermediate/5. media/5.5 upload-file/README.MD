@@ -1,10 +1,16 @@
 ## Intent Gallery
 
-#### Init Intent Gallery based Intent Camera
+#### Init project Upload Image based on Intent Gallery
 
-#### Create function util to convert URI to file
+#### Install Lib
 
-#### Implement launcherIntentGallery & startGallery
+#### Configure Retrofit
+
+#### Preparing Files of Individual Result Intents
+
+#### Sending Descriptions and Files to the Server with Retrofit
+
+#### Reducing Image File Size
 
 #### Result
-![intent-gallery](https://user-images.githubusercontent.com/27923352/194875568-f259c375-74ea-420b-8db3-61b8b3d4649c.png)
+![upload-image](https://user-images.githubusercontent.com/27923352/194883829-21d03664-c0a7-47c3-a793-1c0427693b26.gif)
