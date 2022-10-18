@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ExamTest" tests="23" skipped="0" failures="0" errors="0" timestamp="2022-06-13T16:07:32" hostname="MacBooks-MacBook-Pro.local" time="15.086">
+<testsuite name="ExamTest" tests="23" skipped="0" failures="0" errors="0" timestamp="2022-10-18T13:28:16" hostname="MacBooks-MacBook-Pro.local" time="15.119">
   <properties/>
-  <testcase name="[Latihan 1] - 2 is odd number" classname="ExamTest" time="0.022"/>
-  <testcase name="[Latihan 1] - 6 is odd number" classname="ExamTest" time="0.0"/>
+  <testcase name="[Latihan 1] - 2 is odd number" classname="ExamTest" time="0.031"/>
+  <testcase name="[Latihan 1] - 6 is odd number" classname="ExamTest" time="0.001"/>
   <testcase name="[Latihan 1] - 7 is not odd number" classname="ExamTest" time="0.001"/>
-  <testcase name="[Latihan 1] - 1 is not odd number" classname="ExamTest" time="0.0"/>
-  <testcase name="[Latihan 1] - result function sould be return expected value" classname="ExamTest" time="0.001"/>
-  <testcase name="[Latihan 2] - calculate result should be return 54" classname="ExamTest" time="0.001"/>
+  <testcase name="[Latihan 1] - 1 is not odd number" classname="ExamTest" time="0.001"/>
+  <testcase name="[Latihan 1] - result function sould be return expected value" classname="ExamTest" time="0.003"/>
+  <testcase name="[Latihan 2] - calculate result should be return 54" classname="ExamTest" time="0.003"/>
   <testcase name="[Latihan 2] - calculate result should be return 103" classname="ExamTest" time="0.001"/>
   <testcase name="[Latihan 2] - result function should be return expected value" classname="ExamTest" time="0.003"/>
-  <testcase name="[Latihan 3] - checkType should be return Int when passing param is `50`" classname="ExamTest" time="0.001"/>
-  <testcase name="[Latihan 3] - checkType should be return String when passing param is `Dicoding Indonesia`" classname="ExamTest" time="0.0"/>
-  <testcase name="[Latihan 3] - checkType should be return Double when passing param is `1.0`" classname="ExamTest" time="0.0"/>
-  <testcase name="[Latihan 3] - checkType should be return List when passing param is `listOf&lt;Any&gt;`" classname="ExamTest" time="0.001"/>
+  <testcase name="[Latihan 3] - checkType should be return Int when passing param is `50`" classname="ExamTest" time="0.002"/>
+  <testcase name="[Latihan 3] - checkType should be return String when passing param is `Dicoding Indonesia`" classname="ExamTest" time="0.005"/>
+  <testcase name="[Latihan 3] - checkType should be return Double when passing param is `1.0`" classname="ExamTest" time="0.002"/>
+  <testcase name="[Latihan 3] - checkType should be return List when passing param is `listOf&lt;Any&gt;`" classname="ExamTest" time="0.003"/>
   <testcase name="[Latihan 3] - checkType should be return Map when passing param is `mapOf&lt;Any, Any&gt;`" classname="ExamTest" time="0.001"/>
-  <testcase name="[Latihan 4] - vehicle function should be return Map" classname="ExamTest" time="0.001"/>
-  <testcase name="[Latihan 4] - type should be motorcycle" classname="ExamTest" time="0.002"/>
-  <testcase name="[Latihan 4] - maxSpeed should be 230Km/s" classname="ExamTest" time="0.002"/>
+  <testcase name="[Latihan 4] - vehicle function should be return Map" classname="ExamTest" time="0.002"/>
+  <testcase name="[Latihan 4] - type should be motorcycle" classname="ExamTest" time="0.001"/>
+  <testcase name="[Latihan 4] - maxSpeed should be 230Km/s" classname="ExamTest" time="0.001"/>
   <testcase name="[Latihan 4] - maxTank should be 100Ltr" classname="ExamTest" time="0.001"/>
-  <testcase name="[Latihan 5] - execution time of sum function should be more than 3s" classname="ExamTest" time="3.006"/>
-  <testcase name="[Latihan 5] - sum function should be return 10 if valueA is 5 and valueB is 5" classname="ExamTest" time="3.005"/>
-  <testcase name="[Latihan 5] - sum function should be return 107 if valueA is 100 and valueB is 7" classname="ExamTest" time="3.008"/>
-  <testcase name="[Latihan 5] - execution time of multiple function should be more than 2s" classname="ExamTest" time="2.008"/>
-  <testcase name="[Latihan 5] - multiple function should be return 36 if valueA is 6 and valueB is 6" classname="ExamTest" time="2.005"/>
-  <testcase name="[Latihan 5] - multiple function should be return 25 if valueA is 5 and valueB is 5" classname="ExamTest" time="2.007"/>
+  <testcase name="[Latihan 5] - execution time of sum function should be more than 3s" classname="ExamTest" time="3.009"/>
+  <testcase name="[Latihan 5] - sum function should be return 10 if valueA is 5 and valueB is 5" classname="ExamTest" time="3.006"/>
+  <testcase name="[Latihan 5] - sum function should be return 107 if valueA is 100 and valueB is 7" classname="ExamTest" time="3.009"/>
+  <testcase name="[Latihan 5] - execution time of multiple function should be more than 2s" classname="ExamTest" time="2.006"/>
+  <testcase name="[Latihan 5] - multiple function should be return 36 if valueA is 6 and valueB is 6" classname="ExamTest" time="2.008"/>
+  <testcase name="[Latihan 5] - multiple function should be return 25 if valueA is 5 and valueB is 5" classname="ExamTest" time="2.004"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
