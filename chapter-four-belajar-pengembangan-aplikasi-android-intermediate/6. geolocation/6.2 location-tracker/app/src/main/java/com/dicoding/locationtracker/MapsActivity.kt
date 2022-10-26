@@ -3,6 +3,7 @@ package com.dicoding.locationtracker
 import android.Manifest
 import android.content.IntentSender
 import android.content.pm.PackageManager
+import android.graphics.Color
 import android.location.Location
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -21,6 +22,8 @@ import com.google.android.gms.maps.model.MarkerOptions
 import com.dicoding.locationtracker.databinding.ActivityMapsBinding
 import com.google.android.gms.common.api.ResolvableApiException
 import com.google.android.gms.location.*
+import com.google.android.gms.maps.model.LatLngBounds
+import com.google.android.gms.maps.model.PolylineOptions
 import java.util.concurrent.TimeUnit
 
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
@@ -31,6 +34,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     private lateinit var locationRequest: LocationRequest
     private var isTracking = false
     private lateinit var locationCallback: LocationCallback
+    private var allLatLng = ArrayList<LatLng>()
+    private var boundsBuilder = LatLngBounds.Builder()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -69,9 +74,12 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
         binding.btnStart.setOnClickListener {
             if (!isTracking) {
+                clearMaps()
                 updateTrackingStatus(true)
+                startLocationUpdates()
             } else {
                 updateTrackingStatus(false)
+                stopLocationUpdates()
             }
         }
     }
@@ -188,6 +196,21 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             override fun onLocationResult(locationResult: LocationResult) {
                 for (location in locationResult.locations) {
                     Log.d(TAG, "onLocationResult: " + location.latitude + ", " + location.longitude)
+                    val lastLatLng = LatLng(location.latitude, location.longitude)
+
+                    // draw polyline
+                    allLatLng.add(lastLatLng)
+                    mMap.addPolyline(
+                        PolylineOptions()
+                            .color(Color.CYAN)
+                            .width(10f)
+                            .addAll(allLatLng)
+                    )
+
+                    // set boundaries
+                    boundsBuilder.include(lastLatLng)
+                    val bounds: LatLngBounds = boundsBuilder.build()
+                    mMap.animateCamera(CameraUpdateFactory.newLatLngBounds(bounds, 64))
                 }
             }
         }
@@ -219,6 +242,12 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     override fun onPause() {
         super.onPause()
         stopLocationUpdates()
+    }
+
+    private fun clearMaps() {
+        mMap.clear()
+        allLatLng.clear()
+        boundsBuilder = LatLngBounds.Builder()
     }
 
     companion object {
