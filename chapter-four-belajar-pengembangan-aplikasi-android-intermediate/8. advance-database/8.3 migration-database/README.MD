@@ -3,9 +3,8 @@
 Here is the flow we will do in this exercise:
 
 1. Download the starter project.
-2. Removed the insert code on the ViewModel.
-3. Added CoroutineScope parameter to StudentDatabase.
-4. Added addCallback function when creating Room.
+2. Set the database schema export
+3. Added automatic migration.
 
 ### Result
-![pre-populate-database-room](https://user-images.githubusercontent.com/27923352/199033409-15de12c8-fcc6-4b79-bbb1-becde491ff8c.jpeg)
+![migration-database](https://user-images.githubusercontent.com/27923352/199037324-fc9fbb85-ff21-40c6-a45b-5ac40c22c20d.jpeg)
