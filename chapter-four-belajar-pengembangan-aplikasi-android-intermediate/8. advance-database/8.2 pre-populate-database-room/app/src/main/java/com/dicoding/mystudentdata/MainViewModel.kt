@@ -12,10 +12,6 @@ import kotlinx.coroutines.launch
 
 class MainViewModel(private val studentRepository: StudentRepository) : ViewModel() {
 
-    init {
-        insertAllData()
-    }
-
     fun getAllStudent(): LiveData<List<Student>> = studentRepository.getAllStudent()
 
     fun getAllStudentAndUniversity(): LiveData<List<StudentAndUniversity>> = studentRepository.getAllStudentAndUniversity()
@@ -23,10 +19,6 @@ class MainViewModel(private val studentRepository: StudentRepository) : ViewMode
     fun getAllUniversityAndStudent(): LiveData<List<UniversityAndStudent>> = studentRepository.getAllUniversityAndStudent()
 
     fun getAllStudentWithCourse(): LiveData<List<StudentWithCourse>> = studentRepository.getAllStudentWithCourse()
-
-    private fun insertAllData() = viewModelScope.launch {
-        studentRepository.insertAllData()
-    }
 }
 
 class ViewModelFactory(private val repository: StudentRepository) : ViewModelProvider.Factory {
