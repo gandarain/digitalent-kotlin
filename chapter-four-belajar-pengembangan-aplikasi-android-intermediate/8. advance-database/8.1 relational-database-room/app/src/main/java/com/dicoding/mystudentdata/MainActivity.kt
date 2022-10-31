@@ -8,6 +8,7 @@ import androidx.activity.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.dicoding.mystudentdata.adapter.StudentAndUniversityAdapter
 import com.dicoding.mystudentdata.adapter.StudentListAdapter
+import com.dicoding.mystudentdata.adapter.UniversityAndStudentAdapter
 import com.dicoding.mystudentdata.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -73,7 +74,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getUniversityAndStudent() {
-
+        val adapter = UniversityAndStudentAdapter()
+        binding.rvStudent.adapter = adapter
+        mainViewModel.getAllUniversityAndStudent().observe(this) {
+            adapter.submitList(it)
+        }
     }
 
 
