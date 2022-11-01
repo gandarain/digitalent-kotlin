@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/8.4 sorting-database.iml" filepath="$PROJECT_DIR$/.idea/modules/8.4 sorting-database.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/My_Student_Data.iml" filepath="$PROJECT_DIR$/.idea/modules/My_Student_Data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/My_Student_Data.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/My_Student_Data.app.iml" />
     </modules>
   </component>
 </project>
