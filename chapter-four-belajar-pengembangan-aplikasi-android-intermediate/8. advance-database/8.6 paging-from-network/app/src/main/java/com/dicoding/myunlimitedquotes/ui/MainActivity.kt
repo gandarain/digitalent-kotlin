@@ -28,8 +28,8 @@ class MainActivity : AppCompatActivity() {
         val adapter = QuoteListAdapter()
         binding.rvQuote.adapter = adapter
         mainViewModel.getQuote()
-        mainViewModel.quote.observe(this, {
-            adapter.submitList(it)
-        })
+        mainViewModel.quote.observe(this) {
+            adapter.submitData(lifecycle, it)
+        }
     }
 }
