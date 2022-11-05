@@ -14,7 +14,7 @@ class QuoteRepository(private val quoteDatabase: QuoteDatabase, private val apiS
             config = PagingConfig(
                 pageSize = 5
             ),
-            remoteMediator = QuoteRemoteMediator(quoteDatabase, apiService),,
+            remoteMediator = QuoteRemoteMediator(quoteDatabase, apiService),
             pagingSourceFactory = {
                 quoteDatabase.quoteDao().getAllQuote()
             }
