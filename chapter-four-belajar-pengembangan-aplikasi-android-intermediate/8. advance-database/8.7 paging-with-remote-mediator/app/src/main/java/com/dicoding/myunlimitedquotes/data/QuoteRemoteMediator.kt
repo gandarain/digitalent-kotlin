@@ -58,11 +58,13 @@ class QuoteRemoteMediator(
                     database.remoteKeysDao().deleteRemoteKeys()
                     database.quoteDao().deleteAll()
                 }
+
                 val prevKey = if (page == 1) null else page - 1
                 val nextKey = if (endOfPaginationReached) null else page + 1
                 val keys = responseData.map {
                     RemoteKeys(id = it.id, prevKey = prevKey, nextKey = nextKey)
                 }
+
                 database.remoteKeysDao().insertAll(keys)
                 database.quoteDao().insertQuote(responseData)
             }
@@ -78,11 +80,13 @@ class QuoteRemoteMediator(
             database.remoteKeysDao().getRemoteKeysId(data.id)
         }
     }
+
     private suspend fun getRemoteKeyForFirstItem(state: PagingState<Int, QuoteResponseItem>): RemoteKeys? {
         return state.pages.firstOrNull { it.data.isNotEmpty() }?.data?.firstOrNull()?.let { data ->
             database.remoteKeysDao().getRemoteKeysId(data.id)
         }
     }
+
     private suspend fun getRemoteKeyClosestToCurrentPosition(state: PagingState<Int, QuoteResponseItem>): RemoteKeys? {
         return state.anchorPosition?.let { position ->
             state.closestItemToPosition(position)?.id?.let { id ->

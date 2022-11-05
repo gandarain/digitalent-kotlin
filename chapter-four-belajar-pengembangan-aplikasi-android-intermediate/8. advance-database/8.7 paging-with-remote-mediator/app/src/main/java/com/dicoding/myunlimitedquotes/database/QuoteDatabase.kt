@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 import com.dicoding.myunlimitedquotes.network.QuoteResponseItem
 
 @Database(
-    entities = [QuoteResponseItem::class],
+    entities = [QuoteResponseItem::class, RemoteKeys::class],
     version = 2,
     exportSchema = false
 )
