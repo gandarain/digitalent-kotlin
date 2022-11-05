@@ -13,6 +13,8 @@ import com.dicoding.myunlimitedquotes.network.QuoteResponseItem
 )
 abstract class QuoteDatabase : RoomDatabase() {
 
+    abstract fun quoteDao(): QuoteDao
+
     companion object {
         @Volatile
         private var INSTANCE: QuoteDatabase? = null
